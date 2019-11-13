@@ -1,6 +1,6 @@
 const express = require('express')
 const mysql = require('mysql')
-
+alert("hi");
 function connect() {
     const connection = mysql.createConnection({
         host: 'localhost',
@@ -22,7 +22,7 @@ app.use(function(req, res, next) {
     next();
 });
 
-//app.get('/', (request, response) => {
+app.get('/', (request, response) => {
     response.send('welcome to my application')
 })
 
@@ -36,6 +36,5 @@ app.get('/product', (request, response) => {
 })
 
 app.listen(4000, () => {
-
     console.log(`Server started on port 4000`);
 });
