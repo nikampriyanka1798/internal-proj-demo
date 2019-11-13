@@ -1,6 +1,6 @@
 const express = require('express')
 const mysql = require('mysql')
-alert("hi");
+alert("hello");
 function connect() {
     const connection = mysql.createConnection({
         host: 'localhost',
